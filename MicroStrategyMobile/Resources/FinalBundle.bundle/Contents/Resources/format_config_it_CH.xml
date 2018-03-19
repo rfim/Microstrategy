@@ -1,0 +1,32 @@
+    <locale language="it" country="CH">
+        <list-separator>;</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#'##0</in>
+            <!-- display node for this data type currently not in use -->
+           <display>#'##0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0.##########</out>
+            <in>#'##0.###</in>
+            <!-- display node for this data type currently not in use -->
+            <display>#'##0.##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>dd.MM.yyyy</out>
+            <in>dd.MM.yyyy</in>
+            <in>dd.MM.yy</in>
+            <in>dd. MM. yy</in>
+            <in>d/M/yy</in>
+            <in>dd.M.yy</in>
+            <in>yyyy-MM-dd</in>
+            <display>dd.MM.yyyy</display>
+        </data-type>
+        <data-type name="time">
+            <out>HH:mm:ss</out>
+            <in>HH:mm:ss</in>
+            <in>H:mm:ss</in>
+            <in>H.mm' h'</in>
+            <display>HH:mm:ss</display>
+        </data-type>
+    </locale>

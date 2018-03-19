@@ -1,0 +1,142 @@
+<layout>
+<panelStack currentId="Options" panels="Options|Colors|Labels|Opacity|Mode">
+<panel id="Options">
+<tabContainer>
+<tab label="Sparkline">
+<input id="lsh" type="2" label="Show sparkline graph" value="true" enabled="true"/>
+<input id="lap" type="2" label="All points" value="false" enabled="true"/>
+<input id="lep" type="2" label="End points" value="true" enabled="true" dep="lap" depValue="false"/>
+<input id="lrl" type="2" label="Reference line" value="true" enabled="true">
+<dependency operator="or" newValue="null">
+<dependency operator="eval" dep="kpi" depValue="false"/>
+<dependency operator="and">
+<dependency operator="eval" dep="kpi" depValue="true"/>
+<dependency operator="not">
+<dependency operator="eval" dep="metkpi" depValue="1"/>
+</dependency>
+</dependency>
+</dependency>
+</input>
+<input id="lra" type="2" label="Reference area" value="true" enabled="true"/>
+<input id="lmsh" type="2" label="Associated metric" value="true" enabled="true"/>
+<input id="let" type="2" label="Show Tooltips" value="true" enabled="true"/>
+</tab>
+<tab label="Bar">
+<input id="bsg" type="2" label="Show bar graph" value="false" enabled="true"/>
+<input id="bl" type="2" label="Min/max legend" value="true" enabled="true"/>
+<input id="brl" type="2" label="Reference line" value="true" enabled="true">
+<dependency operator="or" newValue="null">
+<dependency operator="eval" dep="kpi" depValue="false"/>
+<dependency operator="and">
+<dependency operator="eval" dep="kpi" depValue="true"/>
+<dependency operator="not">
+<dependency operator="eval" dep="metkpi" depValue="1"/>
+</dependency>
+</dependency>
+</dependency>
+</input>
+<input id="bet" type="2" label="Show Tooltips" value="true" enabled="true"/>
+</tab>
+<tab label="Bullet">
+<input id="gsh" type="2" label="Show bullet graph" value="true" enabled="true"/>
+<input id="grl" type="2" label="Reference line" value="true" enabled="true"/>
+<input id="gra" type="2" label="Reference bands" value="true" enabled="true"/>
+<input id="gl" type="2" label="Band legend" value="true" enabled="true"/>
+<input id="gmsh" type="2" label="Associated metric" value="true" enabled="true"/>
+<input id="gia" type="2" label="Invert graph axis" value="false" enabled="true"/>
+<input id="get" type="2" label="Show Tooltips" value="true" enabled="true"/>
+<input id="gmm" type="4" label="Minimum Value" value="" enabled="true"/>
+</tab>
+</tabContainer>
+</panel>
+<panel id="Colors">
+<tabContainer>
+<tab label="Sparkline">
+<input id="llsc" type="1" label="Series line" value="0x333333" enabled="true"/>
+<input id="lrlc" type="1" label="Reference line" value="0x0066FF" enabled="true"/>
+<input id="lrac" type="1" label="Reference area" value="0xDEDEDE" enabled="true"/>
+</tab>
+<tab label="Bar">
+<input id="bpv" type="1" label="Positive values" value="0x009900" enabled="true"/>
+<input id="bnv" type="1" label="Negative values" value="0xFF0000" enabled="true"/>
+<input id="brlc" type="1" label="Reference Line" value="0x0066FF" enabled="true"/>
+</tab>
+<tab label="Bullet">
+<input id="ggc" type="1" label="Positive values" value="0x000066" enabled="true"/>
+<input id="gnv" type="1" label="Negative values" value="0xFF0000" enabled="true"/>
+<input id="grlc" type="1" label="Reference line" value="0x0066FF" enabled="true"/>
+<input id="gpc" type="1" label="Band 1" value="0x999999" enabled="true"/>
+<input id="grc" type="1" label="Band 2" value="0xBBBBBB" enabled="true"/>
+<input id="gsc" type="1" label="Band 3" value="0xDEDEDE" enabled="true"/>
+</tab>
+</tabContainer>
+</panel>
+<panel id="Labels">
+<tabContainer>
+<tab label="Sparkline">
+<input id="lh" type="4" label="Header" value="[Sparkline]" enabled="true" width="160"/>
+<input id="lam" type="4" label="Associated metric" value="" enabled="true" width="160"/>
+</tab>
+<tab label="Bar">
+<input id="bh" type="4" label="Header" value="[Bar]" enabled="true" width="160"/>
+</tab>
+<tab label="Bullet">
+<input id="gh" type="4" label="Header" value="[Bullet]" enabled="true" width="160"/>
+<input id="gtam" type="4" label="Associated metric" value="" enabled="true" width="160"/>
+<input id="glt" type="4" label="Band 1" value="Low" enabled="true" width="160"/>
+<input id="gmt" type="4" label="Band 2" value="Medium" enabled="true" width="160"/>
+<input id="ght" type="4" label="Band 3" value="High" enabled="true" width="160"/>
+</tab>
+</tabContainer>
+</panel>
+<panel id="Opacity">
+<tabContainer>
+<tab label="Opacity">
+<input id="wa" type="3" label="Background opacity" value="100%" enabled="true" listValues="0%|20%|40%|60%|80%|100%" listIds="" listType="2"/>
+</tab>
+</tabContainer>
+</panel>
+<panel id="Mode">
+<tabContainer>
+<tab label="Mode">
+<input id="var" type="3" label="Operation mode" value="Ticker" enabled="true" listValues="Grid|Vertical Scroll|Ticker" listIds="Grid|Vertical Scroll|Ticker" listType="2">
+<dependency operator="eval" dep="itd" depValue="false" newValue="null"/>
+</input>
+<input id="scm" type="2" label="Display a single metric column at a time (applies only to iPad)" value="" enabled="true"/>
+<input id="kpi" type="2" label="KPI List Mode" value="false" enabled="false"/>
+<input id="metkpi" type="4" label="Metrics per KPI" value="1" enabled="false" width="120" dep="kpi" depValue="true"/>
+<input id="hch" type="2" label="Hide column headers" value="false" enabled="true"/>
+<input id="htc" type="2" label="Hide text columns" value="false" enabled="true"/>
+<input id="ll" type="2" label="Lock layout" value="false" enabled="true"/>
+<fieldset label="" cols="1">
+<input id="itd" type="2" label="Tree display" value="false" enabled="true">
+<dependency operator="and" newValue="null">
+<dependency operator="eval" dep="kpi" depValue="false"/>
+<dependency operator="eval" dep="var" depValue="Grid"/>
+</dependency>
+</input>
+<input id="agf" type="3" label="Aggregation Function" value="Sum" enabled="true" listValues="Sum|Average|Count|Maximum|Minimum" listIds="Sum|Average|Count|Maximum|Minimum" listType="2" dep="itd" depValue="true"/>
+</fieldset>
+</tab>
+<tab label="Vertical Scroll">
+<input id="sb" type="2" label="Previous/Next buttons" value="true" enabled="true"/>
+<input id="mot" type="3" label="Motion" value="Normal" enabled="true" listValues="Slow|Normal|Fast" listIds="Slow|Normal|Fast" listType="2"/>
+<dependency operator="eval" dep="var" depValue="Vertical Scroll" newValue="null"/>
+</tab>
+<tab label="Ticker">
+<input id="ttitle" type="4" label="Title" value="[Ticker Title]" enabled="true" width="160"/>
+<input id="sbT" type="2" label="Previous/Next buttons" value="true" enabled="true"/>
+<input id="dv" type="2" label="Enable detail view" value="true" enabled="true"/>
+<input id="motT" type="3" label="Motion" value="Normal" enabled="true" listValues="Slow|Normal|Fast" listIds="Slow|Normal|Fast" listType="2"/>
+<input id="ticker1" type="6" label="Ticker 1(M3 &lt; M7)" value="[Customized text for Ticker #1]" enabled="true"/>
+<input id="ticker2" type="6" label="Ticker 2(M3 >= M7)" value="[Customized text for Ticker #2]" enabled="true"/>
+<input id="t1c" type="1" label="Ticker 1 color" value="0x000000" enabled="true"/>
+<input id="t2c" type="1" label="Ticker 2 color" value="0x008000" enabled="true"/>
+<dependency operator="eval" dep="var" depValue="Ticker" newValue="null"/>
+</tab>
+</tabContainer>
+</panel>
+</panelStack>
+<input id="gam" type="2" label="Display metrics for hidden graphs" value="true" enabled="true"/>
+<input id="igf" type="2" label="Inherit grid formatting" value="true" enabled="true"/>
+</layout>

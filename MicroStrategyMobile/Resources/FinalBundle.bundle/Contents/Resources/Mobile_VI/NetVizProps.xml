@@ -1,0 +1,10 @@
+<layout>
+  <fieldsetpanel label="" anno="">
+    <input id="shownodelabel" type="2" label="Show Node Label" value="false" enabled="true"/>
+    <input id="showedgearrow" type="2" label="Show Edge Direction" value="false" enabled="true"/>
+    <input id="animatelayout" type="2" label="Animate Layout Transition" value="false" enabled="true"/>
+  </fieldsetpanel>
+  <fieldsetpanel label="" anno="">
+    <input id="nodesizeaggfunc" type="3" label="Node Size Aggregation" value="Count of" enabled="true" listValues="Count of|Sum of|Average of|Min of|Max of" listIds="Count of|Sum of|Average of|Min of|Max of" listType="2" showValue="true"/>
+  </fieldsetpanel>
+</layout>

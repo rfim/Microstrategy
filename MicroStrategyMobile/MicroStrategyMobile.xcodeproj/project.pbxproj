@@ -1,0 +1,1139 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B1E22B41DB70BDE0093A1D3 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 193746241CF5851800C7A378 /* Entitlements.plist */; };
+		0B1E22B71DB70BF30093A1D3 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19BE7DB31CF3F84800F4A3DB /* Entitlements.plist */; };
+		196794481CD8581A00352F3A /* MicroStrategyMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196794461CD8580E00352F3A /* MicroStrategyMobileSDK.framework */; };
+		196794491CD8581A00352F3A /* MicroStrategyMobileSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 196794461CD8580E00352F3A /* MicroStrategyMobileSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1967944B1CD85AEE00352F3A /* MicroStrategyMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196794461CD8580E00352F3A /* MicroStrategyMobileSDK.framework */; };
+		1967944C1CD85AEE00352F3A /* MicroStrategyMobileSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 196794461CD8580E00352F3A /* MicroStrategyMobileSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19CE945A1CC4B49400FAB70B /* Launch Screen_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CE94591CC4B49400FAB70B /* Launch Screen_iPhone.storyboard */; };
+		323F93591E2772D5001D6904 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F93581E2772D5001D6904 /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		323F93631E2772E6001D6904 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323F93581E2772D5001D6904 /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7292201E1D86CD2200C58C97 /* FinalBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7292201B1D86CD2200C58C97 /* FinalBundle.bundle */; };
+		729220201D86CD2200C58C97 /* MicroStrategyMobileSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7292201D1D86CD2200C58C97 /* MicroStrategyMobileSDKResources.bundle */; };
+		729220211D86CD2700C58C97 /* FinalBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7292201B1D86CD2200C58C97 /* FinalBundle.bundle */; };
+		7292202F1D86CD5700C58C97 /* MicroStrategyMobileSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7292201D1D86CD2200C58C97 /* MicroStrategyMobileSDKResources.bundle */; };
+		729220441D86D01D00C58C97 /* IconFont in Resources */ = {isa = PBXBuildFile; fileRef = 729220431D86D01D00C58C97 /* IconFont */; };
+		729220451D86D01D00C58C97 /* IconFont in Resources */ = {isa = PBXBuildFile; fileRef = 729220431D86D01D00C58C97 /* IconFont */; };
+		8ED4871B1CAA25CA00DF2648 /* MSTR10_splash screen_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487091CAA253400DF2648 /* MSTR10_splash screen_iphone.png */; };
+		8ED4871C1CAA25CA00DF2648 /* MSTR10_splash screen_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870A1CAA253400DF2648 /* MSTR10_splash screen_iphone@2x.png */; };
+		8ED4871D1CAA25CA00DF2648 /* MSTR10_splash screen_iphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870B1CAA253400DF2648 /* MSTR10_splash screen_iphone@3x.png */; };
+		8ED4871E1CAA25CA00DF2648 /* splash_screen_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870C1CAA253400DF2648 /* splash_screen_icon_white.png */; };
+		8ED4871F1CAA25CA00DF2648 /* splash_screen_icon_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870D1CAA253400DF2648 /* splash_screen_icon_white@2x.png */; };
+		8ED487201CAA25CA00DF2648 /* splash_screen_icon_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870E1CAA253400DF2648 /* splash_screen_icon_white@3x.png */; };
+		8ED487211CAA25CB00DF2648 /* MSTR10_splash screen_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487091CAA253400DF2648 /* MSTR10_splash screen_iphone.png */; };
+		8ED487221CAA25CB00DF2648 /* MSTR10_splash screen_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870A1CAA253400DF2648 /* MSTR10_splash screen_iphone@2x.png */; };
+		8ED487231CAA25CB00DF2648 /* MSTR10_splash screen_iphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870B1CAA253400DF2648 /* MSTR10_splash screen_iphone@3x.png */; };
+		8ED487241CAA25CB00DF2648 /* splash_screen_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870C1CAA253400DF2648 /* splash_screen_icon_white.png */; };
+		8ED487251CAA25CB00DF2648 /* splash_screen_icon_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870D1CAA253400DF2648 /* splash_screen_icon_white@2x.png */; };
+		8ED487261CAA25CB00DF2648 /* splash_screen_icon_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4870E1CAA253400DF2648 /* splash_screen_icon_white@3x.png */; };
+		8ED487541CAAC00300DF2648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED487501CAABFE100DF2648 /* main.m */; };
+		8ED487551CAAC00400DF2648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED487501CAABFE100DF2648 /* main.m */; };
+		8ED487581CAAC29300DF2648 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487561CAAC29300DF2648 /* Default-Landscape.png */; };
+		8ED487591CAAC29300DF2648 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487571CAAC29300DF2648 /* Default-Portrait.png */; };
+		8ED4875E1CAAD70600DF2648 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4875C1CAAD70100DF2648 /* MainWindow-iPad.xib */; };
+		8ED4875F1CAAD70800DF2648 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED4875D1CAAD70100DF2648 /* MainWindow.xib */; };
+		8ED487651CAADE1E00DF2648 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487621CAADE1E00DF2648 /* Default-568h@2x.png */; };
+		8ED487661CAADE1E00DF2648 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487631CAADE1E00DF2648 /* Default@2x.png */; };
+		8ED4876B1CAADFFD00DF2648 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487171CAA253400DF2648 /* Settings.bundle */; };
+		8ED4876C1CAADFFE00DF2648 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487171CAA253400DF2648 /* Settings.bundle */; };
+		8ED487701CAAE01000DF2648 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487151CAA253400DF2648 /* Images.xcassets */; };
+		8ED487711CAAE01000DF2648 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED487151CAA253400DF2648 /* Images.xcassets */; };
+		A4ED6F911E55913D00496FB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4ED6F821E55848600496FB3 /* InfoPlist.strings */; };
+		A4ED6F931E55A58300496FB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4ED6F821E55848600496FB3 /* InfoPlist.strings */; };
+		DDA364E41D2BB28C00927316 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC6ED551BA461BA007713F1 /* CoreData.framework */; };
+		DDA364E51D2BB2C500927316 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191199E41CBBA3A500156831 /* MessageUI.framework */; };
+		DDA364E61D2BB2DD00927316 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E570E1C1B90F0F400D65413 /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		DDA364E71D2BB39600927316 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1954C0AA1D07FDA300B3EE73 /* libc++.tbd */; };
+		DDA364EA1D2BBDC500927316 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC6ED551BA461BA007713F1 /* CoreData.framework */; };
+		DDA364EB1D2BBDCD00927316 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191199E41CBBA3A500156831 /* MessageUI.framework */; };
+		DDA364EC1D2BBDD300927316 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E570E1C1B90F0F400D65413 /* WebKit.framework */; };
+		DDA364ED1D2BBDDD00927316 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1954C0AA1D07FDA300B3EE73 /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E8C946D1BCD14D100D8D99A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				196794491CD8581A00352F3A /* MicroStrategyMobileSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8C94721BCD14D900D8D99A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1967944C1CD85AEE00352F3A /* MicroStrategyMobileSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B9DCAD81D2A4A2400F4DF57 /* FinalBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FinalBundle.bundle; sourceTree = "<group>"; };
+		1909BDC11CFC088F008CCD06 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		1909BDD91CFC1332008CCD06 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../Library/openssl/lib/libssl.a; sourceTree = "<group>"; };
+		191199DC1CBBA2BC00156831 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		191199DE1CBBA2EC00156831 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		191199E01CBBA30900156831 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		191199E21CBBA36500156831 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		191199E41CBBA3A500156831 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		191199FD1CBBAA1700156831 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		193746241CF5851800C7A378 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = iPad/Entitlements.plist; sourceTree = SOURCE_ROOT; };
+		1954C0AA1D07FDA300B3EE73 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		196794461CD8580E00352F3A /* MicroStrategyMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicroStrategyMobileSDK.framework; path = ../Library/MicroStrategyMobileSDK.framework; sourceTree = "<group>"; };
+		19BE7CD11CF2F3AE00F4A3DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		19BE7CD31CF2F41800F4A3DB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		19BE7CD51CF2F42B00F4A3DB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		19BE7CD71CF2F43200F4A3DB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		19BE7CDA1CF2F44A00F4A3DB /* NewsstandKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewsstandKit.framework; path = System/Library/Frameworks/NewsstandKit.framework; sourceTree = SDKROOT; };
+		19BE7CDC1CF2F45000F4A3DB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		19BE7CDE1CF2F45500F4A3DB /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		19BE7CE01CF2F46200F4A3DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19BE7CE21CF2F46900F4A3DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19BE7CE41CF2F47300F4A3DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19BE7CE61CF2F48400F4A3DB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		19BE7CE81CF2F48E00F4A3DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		19BE7CEB1CF2F49C00F4A3DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		19BE7CED1CF2F4AA00F4A3DB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		19BE7CF01CF2F4BA00F4A3DB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		19BE7CF41CF2F4D100F4A3DB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		19BE7D581CF30D6100F4A3DB /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		19BE7D5A1CF30D6800F4A3DB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		19BE7D5C1CF30D7400F4A3DB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		19BE7D5E1CF30DA000F4A3DB /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../Library/GoogleAnalyticsServicesiOS/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		19BE7D8E1CF3E82600F4A3DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		19BE7DB31CF3F84800F4A3DB /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = iPhone/Entitlements.plist; sourceTree = SOURCE_ROOT; };
+		19BE7DE11CF4376800F4A3DB /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		19BE7DE31CF4377100F4A3DB /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		19BE7DE51CF4377A00F4A3DB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		19CE94591CC4B49400FAB70B /* Launch Screen_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen_iPhone.storyboard"; sourceTree = "<group>"; };
+		323F93581E2772D5001D6904 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		7292201B1D86CD2200C58C97 /* FinalBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FinalBundle.bundle; path = Resources/FinalBundle.bundle; sourceTree = "<group>"; };
+		7292201D1D86CD2200C58C97 /* MicroStrategyMobileSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MicroStrategyMobileSDKResources.bundle; path = Resources/MicroStrategyMobileSDKResources.bundle; sourceTree = "<group>"; };
+		729220431D86D01D00C58C97 /* IconFont */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IconFont; path = Resources/IconFont; sourceTree = "<group>"; };
+		8E570E181B90F0E500D65413 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8E570E1A1B90F0ED00D65413 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8E570E1C1B90F0F400D65413 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8E570E1E1B90F10200D65413 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		8E570E201B90F10A00D65413 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8E8C1D2C1BA779BB001C5CB7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8E8C1D301BA779F6001C5CB7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8E8C1D321BA77A1B001C5CB7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8E8C94111BCD119D00D8D99A /* MSTRMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSTRMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8C94641BCD136600D8D99A /* MicroStrategy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroStrategy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC6C9161BA3CC27007713F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC6C9171BA3CC27007713F1 /* MicroStrategyMobileSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MicroStrategyMobileSDK.h; sourceTree = "<group>"; };
+		8EC6C95C1BA3CD27007713F1 /* MicroStrategyMobileSDK_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroStrategyMobileSDK_Prefix.pch; sourceTree = "<group>"; };
+		8EC6ED551BA461BA007713F1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8EC6ED571BA46200007713F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8ED487091CAA253400DF2648 /* MSTR10_splash screen_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MSTR10_splash screen_iphone.png"; path = "Images.xcassets/MSTR10_splash screen_iphone.png"; sourceTree = "<group>"; };
+		8ED4870A1CAA253400DF2648 /* MSTR10_splash screen_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MSTR10_splash screen_iphone@2x.png"; path = "Images.xcassets/MSTR10_splash screen_iphone@2x.png"; sourceTree = "<group>"; };
+		8ED4870B1CAA253400DF2648 /* MSTR10_splash screen_iphone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MSTR10_splash screen_iphone@3x.png"; path = "Images.xcassets/MSTR10_splash screen_iphone@3x.png"; sourceTree = "<group>"; };
+		8ED4870C1CAA253400DF2648 /* splash_screen_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash_screen_icon_white.png; path = Images.xcassets/splash_screen_icon_white.png; sourceTree = "<group>"; };
+		8ED4870D1CAA253400DF2648 /* splash_screen_icon_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_icon_white@2x.png"; path = "Images.xcassets/splash_screen_icon_white@2x.png"; sourceTree = "<group>"; };
+		8ED4870E1CAA253400DF2648 /* splash_screen_icon_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash_screen_icon_white@3x.png"; path = "Images.xcassets/splash_screen_icon_white@3x.png"; sourceTree = "<group>"; };
+		8ED487151CAA253400DF2648 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8ED487171CAA253400DF2648 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		8ED487501CAABFE100DF2648 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OtherSources/main.m; sourceTree = SOURCE_ROOT; };
+		8ED487561CAAC29300DF2648 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "iPad/Default-Landscape.png"; sourceTree = SOURCE_ROOT; };
+		8ED487571CAAC29300DF2648 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "iPad/Default-Portrait.png"; sourceTree = SOURCE_ROOT; };
+		8ED4875C1CAAD70100DF2648 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		8ED4875D1CAAD70100DF2648 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		8ED487601CAADAED00DF2648 /* Info_IPad.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_IPad.plist; sourceTree = SOURCE_ROOT; };
+		8ED487611CAADAED00DF2648 /* Info_IPhone.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_IPhone.plist; sourceTree = SOURCE_ROOT; };
+		8ED487621CAADE1E00DF2648 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "iPhone/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		8ED487631CAADE1E00DF2648 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "iPhone/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		A4ED6F811E55848600496FB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F831E55849A00496FB3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F841E5584AB00496FB3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F851E5584BB00496FB3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A4ED6F861E5584CD00496FB3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A4ED6F871E5584D500496FB3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F881E5584DD00496FB3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F8A1E5585EC00496FB3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A4ED6F8B1E55861800496FB3 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F8C1E55863600496FB3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F8D1E55864700496FB3 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F8E1E55866400496FB3 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F8F1E55867900496FB3 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4ED6F901E55869800496FB3 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D603C70D1D38BA5100480A06 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E8C940E1BCD119D00D8D99A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323F93631E2772E6001D6904 /* UserNotifications.framework in Frameworks */,
+				DDA364ED1D2BBDDD00927316 /* libc++.tbd in Frameworks */,
+				DDA364EC1D2BBDD300927316 /* WebKit.framework in Frameworks */,
+				DDA364EB1D2BBDCD00927316 /* MessageUI.framework in Frameworks */,
+				DDA364EA1D2BBDC500927316 /* CoreData.framework in Frameworks */,
+				196794481CD8581A00352F3A /* MicroStrategyMobileSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8C94501BCD136600D8D99A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323F93591E2772D5001D6904 /* UserNotifications.framework in Frameworks */,
+				DDA364E71D2BB39600927316 /* libc++.tbd in Frameworks */,
+				DDA364E61D2BB2DD00927316 /* WebKit.framework in Frameworks */,
+				DDA364E51D2BB2C500927316 /* MessageUI.framework in Frameworks */,
+				DDA364E41D2BB28C00927316 /* CoreData.framework in Frameworks */,
+				1967944B1CD85AEE00352F3A /* MicroStrategyMobileSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B9DCACC1D2A4A0000F4DF57 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0B9DCAD81D2A4A2400F4DF57 /* FinalBundle.bundle */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		8E570E171B90F0CC00D65413 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				323F93581E2772D5001D6904 /* UserNotifications.framework */,
+				D603C70D1D38BA5100480A06 /* libstdc++.tbd */,
+				1954C0AA1D07FDA300B3EE73 /* libc++.tbd */,
+				19BE7D5E1CF30DA000F4A3DB /* libGoogleAnalyticsServices.a */,
+				1909BDD91CFC1332008CCD06 /* libssl.a */,
+				19BE7CD51CF2F42B00F4A3DB /* Accelerate.framework */,
+				8E570E1A1B90F0ED00D65413 /* AssetsLibrary.framework */,
+				8E8C1D321BA77A1B001C5CB7 /* AudioToolbox.framework */,
+				8E8C1D2C1BA779BB001C5CB7 /* AVFoundation.framework */,
+				191199E21CBBA36500156831 /* CFNetwork.framework */,
+				8EC6ED551BA461BA007713F1 /* CoreData.framework */,
+				8E570E181B90F0E500D65413 /* CoreFoundation.framework */,
+				19BE7CE41CF2F47300F4A3DB /* CoreGraphics.framework */,
+				19BE7CD71CF2F43200F4A3DB /* CoreImage.framework */,
+				19BE7CE81CF2F48E00F4A3DB /* CoreLocation.framework */,
+				8E8C1D301BA779F6001C5CB7 /* CoreMedia.framework */,
+				19BE7CD31CF2F41800F4A3DB /* CoreMotion.framework */,
+				191199E01CBBA30900156831 /* CoreTelephony.framework */,
+				19BE7CED1CF2F4AA00F4A3DB /* CoreText.framework */,
+				19BE7CF01CF2F4BA00F4A3DB /* CoreVideo.framework */,
+				19BE7CE21CF2F46900F4A3DB /* Foundation.framework */,
+				19BE7CDE1CF2F45500F4A3DB /* GLKit.framework */,
+				19BE7CDC1CF2F45000F4A3DB /* ImageIO.framework */,
+				191199DE1CBBA2EC00156831 /* LocalAuthentication.framework */,
+				19BE7D8E1CF3E82600F4A3DB /* MapKit.framework */,
+				8E570E201B90F10A00D65413 /* MediaPlayer.framework */,
+				191199E41CBBA3A500156831 /* MessageUI.framework */,
+				196794461CD8580E00352F3A /* MicroStrategyMobileSDK.framework */,
+				19BE7CF41CF2F4D100F4A3DB /* MobileCoreServices.framework */,
+				19BE7CDA1CF2F44A00F4A3DB /* NewsstandKit.framework */,
+				19BE7CE61CF2F48400F4A3DB /* OpenGLES.framework */,
+				19BE7CD11CF2F3AE00F4A3DB /* QuartzCore.framework */,
+				8E570E1E1B90F10200D65413 /* QuickLook.framework */,
+				1909BDC11CFC088F008CCD06 /* SafariServices.framework */,
+				19BE7CEB1CF2F49C00F4A3DB /* Security.framework */,
+				8EC6ED571BA46200007713F1 /* SystemConfiguration.framework */,
+				19BE7CE01CF2F46200F4A3DB /* UIKit.framework */,
+				8E570E1C1B90F0F400D65413 /* WebKit.framework */,
+				19BE7DE11CF4376800F4A3DB /* libiconv.2.tbd */,
+				19BE7D5A1CF30D6800F4A3DB /* libiconv.tbd */,
+				19BE7DE51CF4377A00F4A3DB /* libsqlite3.0.tbd */,
+				19BE7D5C1CF30D7400F4A3DB /* libsqlite3.tbd */,
+				19BE7D581CF30D6100F4A3DB /* libxml2.tbd */,
+				19BE7DE31CF4377100F4A3DB /* libz.1.tbd */,
+				191199DC1CBBA2BC00156831 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E8C94121BCD119D00D8D99A /* MicroStrategyMobile */ = {
+			isa = PBXGroup;
+			children = (
+				A4ED6F821E55848600496FB3 /* InfoPlist.strings */,
+				8ED487601CAADAED00DF2648 /* Info_IPad.plist */,
+				8ED487611CAADAED00DF2648 /* Info_IPhone.plist */,
+				8E8C944C1BCD130300D8D99A /* Supporting Files */,
+				8E8C94291BCD12E900D8D99A /* iPad */,
+				8E8C94301BCD12E900D8D99A /* iPhone */,
+			);
+			path = MicroStrategyMobile;
+			sourceTree = "<group>";
+		};
+		8E8C94291BCD12E900D8D99A /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				193746241CF5851800C7A378 /* Entitlements.plist */,
+				8ED487561CAAC29300DF2648 /* Default-Landscape.png */,
+				8ED487571CAAC29300DF2648 /* Default-Portrait.png */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		8E8C94301BCD12E900D8D99A /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				19BE7DB31CF3F84800F4A3DB /* Entitlements.plist */,
+				8ED487621CAADE1E00DF2648 /* Default-568h@2x.png */,
+				8ED487631CAADE1E00DF2648 /* Default@2x.png */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		8E8C944C1BCD130300D8D99A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ED487501CAABFE100DF2648 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EA8B1B31B90EEA10063204B = {
+			isa = PBXGroup;
+			children = (
+				0B9DCACC1D2A4A0000F4DF57 /* Custom */,
+				8E8C94121BCD119D00D8D99A /* MicroStrategyMobile */,
+				8ED4875C1CAAD70100DF2648 /* MainWindow-iPad.xib */,
+				8ED4875D1CAAD70100DF2648 /* MainWindow.xib */,
+				8EC6C9141BA3CC27007713F1 /* MicroStrategyMobileSDK */,
+				8ED487081CAA252500DF2648 /* Resource */,
+				8E570E171B90F0CC00D65413 /* Frameworks */,
+				8EA8B1BD1B90EEA10063204B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EA8B1BD1B90EEA10063204B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C94111BCD119D00D8D99A /* MSTRMobile.app */,
+				8E8C94641BCD136600D8D99A /* MicroStrategy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EC6C9141BA3CC27007713F1 /* MicroStrategyMobileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8EC6C9171BA3CC27007713F1 /* MicroStrategyMobileSDK.h */,
+				8EC6C9151BA3CC27007713F1 /* Supporting Files */,
+			);
+			path = MicroStrategyMobileSDK;
+			sourceTree = "<group>";
+		};
+		8EC6C9151BA3CC27007713F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EC6C95C1BA3CD27007713F1 /* MicroStrategyMobileSDK_Prefix.pch */,
+				8EC6C9161BA3CC27007713F1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ED487081CAA252500DF2648 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				729220431D86D01D00C58C97 /* IconFont */,
+				7292201B1D86CD2200C58C97 /* FinalBundle.bundle */,
+				7292201D1D86CD2200C58C97 /* MicroStrategyMobileSDKResources.bundle */,
+				19CE94591CC4B49400FAB70B /* Launch Screen_iPhone.storyboard */,
+				191199FD1CBBAA1700156831 /* Launch Screen.storyboard */,
+				8ED487091CAA253400DF2648 /* MSTR10_splash screen_iphone.png */,
+				8ED4870A1CAA253400DF2648 /* MSTR10_splash screen_iphone@2x.png */,
+				8ED4870B1CAA253400DF2648 /* MSTR10_splash screen_iphone@3x.png */,
+				8ED4870C1CAA253400DF2648 /* splash_screen_icon_white.png */,
+				8ED4870D1CAA253400DF2648 /* splash_screen_icon_white@2x.png */,
+				8ED4870E1CAA253400DF2648 /* splash_screen_icon_white@3x.png */,
+				8ED487151CAA253400DF2648 /* Images.xcassets */,
+				8ED487171CAA253400DF2648 /* Settings.bundle */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0BE950B31D1CFEB700EE03CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE950B61D1D150F00EE03CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E8C94101BCD119D00D8D99A /* MicroStrategyMobileIPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E8C94251BCD119E00D8D99A /* Build configuration list for PBXNativeTarget "MicroStrategyMobileIPhone" */;
+			buildPhases = (
+				8E8C940D1BCD119D00D8D99A /* Sources */,
+				8E8C940E1BCD119D00D8D99A /* Frameworks */,
+				8E8C940F1BCD119D00D8D99A /* Resources */,
+				8E8C946D1BCD14D100D8D99A /* Embed Frameworks */,
+				19D3FD4E1CB4FD8A004A71AC /* ShellScript */,
+				0BE950B61D1D150F00EE03CA /* Headers */,
+			);
+			buildRules = (
+			);
+			name = MicroStrategyMobileIPhone;
+			productName = MicroStrategyMobile;
+			productReference = 8E8C94111BCD119D00D8D99A /* MSTRMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E8C944D1BCD136600D8D99A /* MicroStrategyMobileIPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E8C94611BCD136600D8D99A /* Build configuration list for PBXNativeTarget "MicroStrategyMobileIPad" */;
+			buildPhases = (
+				8E8C944E1BCD136600D8D99A /* Sources */,
+				8E8C94501BCD136600D8D99A /* Frameworks */,
+				8E8C94511BCD136600D8D99A /* Resources */,
+				8E8C94721BCD14D900D8D99A /* Embed Frameworks */,
+				19D3FD5D1CB4FDB8004A71AC /* ShellScript */,
+				0BE950B31D1CFEB700EE03CA /* Headers */,
+			);
+			buildRules = (
+			);
+			name = MicroStrategyMobileIPad;
+			productName = MicroStrategyMobile;
+			productReference = 8E8C94641BCD136600D8D99A /* MicroStrategy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EA8B1B41B90EEA10063204B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "MicroStratgy Inc.";
+				TargetAttributes = {
+					8E8C94101BCD119D00D8D99A = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 544EW4C63U;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					8E8C944D1BCD136600D8D99A = {
+						DevelopmentTeam = 4S9ASJUQLQ;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8EA8B1B71B90EEA10063204B /* Build configuration list for PBXProject "MicroStrategyMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				de,
+				"zh-Hans",
+				"zh-Hant",
+				ja,
+				es,
+				"pt-BR",
+				it,
+				nl,
+				da,
+				ko,
+				sv,
+				pl,
+			);
+			mainGroup = 8EA8B1B31B90EEA10063204B;
+			productRefGroup = 8EA8B1BD1B90EEA10063204B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E8C94101BCD119D00D8D99A /* MicroStrategyMobileIPhone */,
+				8E8C944D1BCD136600D8D99A /* MicroStrategyMobileIPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E8C940F1BCD119D00D8D99A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED487221CAA25CB00DF2648 /* MSTR10_splash screen_iphone@2x.png in Resources */,
+				8ED487211CAA25CB00DF2648 /* MSTR10_splash screen_iphone.png in Resources */,
+				8ED487241CAA25CB00DF2648 /* splash_screen_icon_white.png in Resources */,
+				8ED487701CAAE01000DF2648 /* Images.xcassets in Resources */,
+				19CE945A1CC4B49400FAB70B /* Launch Screen_iPhone.storyboard in Resources */,
+				8ED487661CAADE1E00DF2648 /* Default@2x.png in Resources */,
+				8ED487261CAA25CB00DF2648 /* splash_screen_icon_white@3x.png in Resources */,
+				729220201D86CD2200C58C97 /* MicroStrategyMobileSDKResources.bundle in Resources */,
+				8ED4875F1CAAD70800DF2648 /* MainWindow.xib in Resources */,
+				A4ED6F931E55A58300496FB3 /* InfoPlist.strings in Resources */,
+				8ED487651CAADE1E00DF2648 /* Default-568h@2x.png in Resources */,
+				729220441D86D01D00C58C97 /* IconFont in Resources */,
+				0B1E22B71DB70BF30093A1D3 /* Entitlements.plist in Resources */,
+				8ED487251CAA25CB00DF2648 /* splash_screen_icon_white@2x.png in Resources */,
+				8ED4876B1CAADFFD00DF2648 /* Settings.bundle in Resources */,
+				7292201E1D86CD2200C58C97 /* FinalBundle.bundle in Resources */,
+				8ED487231CAA25CB00DF2648 /* MSTR10_splash screen_iphone@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8C94511BCD136600D8D99A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED4875E1CAAD70600DF2648 /* MainWindow-iPad.xib in Resources */,
+				8ED4871C1CAA25CA00DF2648 /* MSTR10_splash screen_iphone@2x.png in Resources */,
+				729220211D86CD2700C58C97 /* FinalBundle.bundle in Resources */,
+				7292202F1D86CD5700C58C97 /* MicroStrategyMobileSDKResources.bundle in Resources */,
+				8ED4871B1CAA25CA00DF2648 /* MSTR10_splash screen_iphone.png in Resources */,
+				8ED4871E1CAA25CA00DF2648 /* splash_screen_icon_white.png in Resources */,
+				8ED487581CAAC29300DF2648 /* Default-Landscape.png in Resources */,
+				8ED487201CAA25CA00DF2648 /* splash_screen_icon_white@3x.png in Resources */,
+				A4ED6F911E55913D00496FB3 /* InfoPlist.strings in Resources */,
+				8ED4871F1CAA25CA00DF2648 /* splash_screen_icon_white@2x.png in Resources */,
+				729220451D86D01D00C58C97 /* IconFont in Resources */,
+				0B1E22B41DB70BDE0093A1D3 /* Entitlements.plist in Resources */,
+				8ED487711CAAE01000DF2648 /* Images.xcassets in Resources */,
+				8ED487591CAAC29300DF2648 /* Default-Portrait.png in Resources */,
+				8ED4876C1CAADFFE00DF2648 /* Settings.bundle in Resources */,
+				8ED4871D1CAA25CA00DF2648 /* MSTR10_splash screen_iphone@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19D3FD4E1CB4FD8A004A71AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is used to merge custom resources to MicroStrategy Bundle\n# Argument 1: The target bundle name.\n# Argument 2: The custom bundle location.\nsh \"$SRCROOT/MergeBundles.sh\" FinalBundle.bundle \"$SRCROOT/Custom/FinalBundle.bundle\"";
+		};
+		19D3FD5D1CB4FDB8004A71AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is used to merge custom resources to MicroStrategy Bundle\n# Argument 1: The target bundle name.\n# Argument 2: The custom bundle location.\nsh \"$SRCROOT/MergeBundles.sh\" FinalBundle.bundle \"$SRCROOT/Custom/FinalBundle.bundle\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E8C940D1BCD119D00D8D99A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED487551CAAC00400DF2648 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8C944E1BCD136600D8D99A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED487541CAAC00300DF2648 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4ED6F821E55848600496FB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4ED6F811E55848600496FB3 /* en */,
+				A4ED6F831E55849A00496FB3 /* fr */,
+				A4ED6F841E5584AB00496FB3 /* de */,
+				A4ED6F851E5584BB00496FB3 /* zh-Hans */,
+				A4ED6F861E5584CD00496FB3 /* zh-Hant */,
+				A4ED6F871E5584D500496FB3 /* ja */,
+				A4ED6F881E5584DD00496FB3 /* es */,
+				A4ED6F8A1E5585EC00496FB3 /* pt-BR */,
+				A4ED6F8B1E55861800496FB3 /* it */,
+				A4ED6F8C1E55863600496FB3 /* nl */,
+				A4ED6F8D1E55864700496FB3 /* da */,
+				A4ED6F8E1E55866400496FB3 /* ko */,
+				A4ED6F8F1E55867900496FB3 /* sv */,
+				A4ED6F901E55869800496FB3 /* pl */,
+			);
+			name = InfoPlist.strings;
+			path = InfoPlistLocalization;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1954C0D21D081A0D00B3EE73 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MicroStrategyMobileSDK/MicroStrategyMobileSDK_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					NDEBUG,
+					_USE_MSI_COM,
+					_UNICODE,
+					_LITTLE_ENDIAN,
+					_WEB,
+					_MAC,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../3rdParty/AppConnect\"",
+					"$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+					"-lStdC++",
+				);
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(PROJECT_DIR)/../../Common/ReportServiceCore/Headers\"/** \"$(PROJECT_DIR)/../../Common/ReportServiceCore/Classes\"/** \"$(PROJECT_DIR)/../../Common\" \"$(PROJECT_DIR)/../ChartEngine/Classes\"/** $(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS/Header";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		1954C0D31D081A0D00B3EE73 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iPhoneAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = iPhoneLaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/iPhone/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 544EW4C63U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info_IPhone.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS";
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mango.dito.MSTRMobile;
+				PRODUCT_NAME = MSTRMobile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		1954C0D41D081A0D00B3EE73 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iPadAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = iPadLaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/iPad/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 4S9ASJUQLQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info_IPad.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+					"-lStdC++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microstrategy.ipad;
+				PRODUCT_NAME = MicroStrategy;
+				PROVISIONING_PROFILE = "3e02207b-465b-49af-9d7b-21fefc9a74da";
+				PROVISIONING_PROFILE_SPECIFIER = "iPad Mobile";
+				SWIFT_VERSION = 3.0;
+				SYMROOT = "${PROJECT_DIR}/build";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Distribution;
+		};
+		8E8C94261BCD119E00D8D99A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iPhoneAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = iPhoneLaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/iPhone/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 544EW4C63U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info_IPhone.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS";
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mango.dito.MSTRMobile;
+				PRODUCT_NAME = MSTRMobile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8E8C94271BCD119E00D8D99A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iPhoneAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = iPhoneLaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/iPhone/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 544EW4C63U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info_IPhone.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS";
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mango.dito.MSTRMobile;
+				PRODUCT_NAME = MSTRMobile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8E8C94621BCD136600D8D99A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iPadAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = iPadLaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/iPad/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4S9ASJUQLQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info_IPad.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+					"-lStdC++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microstrategy.ipad;
+				PRODUCT_NAME = MicroStrategy;
+				PROVISIONING_PROFILE = "d25d7d0d-96bc-490f-876e-82b6c72f6231";
+				PROVISIONING_PROFILE_SPECIFIER = "MicroStrategy Mobile";
+				SWIFT_VERSION = 3.0;
+				SYMROOT = "${PROJECT_DIR}/build";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		8E8C94631BCD136600D8D99A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iPadAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = iPadLaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/iPad/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MicroStratetgy Incorporated";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MicroStratetgy Incorporated";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = AAZCU44KUG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info_IPad.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+					"-lStdC++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.microstrategy.ipad;
+				PRODUCT_NAME = MicroStrategy;
+				PROVISIONING_PROFILE = "49b8a5a1-b35d-41b9-a834-cb7d07f88fd6";
+				PROVISIONING_PROFILE_SPECIFIER = iPadPush;
+				SWIFT_VERSION = 3.0;
+				SYMROOT = "${PROJECT_DIR}/build";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		8EA8B1DD1B90EEA10063204B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MicroStrategyMobileSDK/MicroStrategyMobileSDK_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					_DEBUG,
+					_USE_MSI_COM,
+					_UNICODE,
+					_LITTLE_ENDIAN,
+					_WEB,
+					_MAC,
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../3rdParty/AppConnect\"",
+					"$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+					"-lStdC++",
+				);
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(PROJECT_DIR)/../../Common/ReportServiceCore/Headers\"/** \"$(PROJECT_DIR)/../../Common/ReportServiceCore/Classes\"/** \"$(PROJECT_DIR)/../../Common\" \"$(PROJECT_DIR)/../ChartEngine/Classes\"/** $(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS/Header";
+			};
+			name = Debug;
+		};
+		8EA8B1DE1B90EEA10063204B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Library\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MicroStrategyMobileSDK/MicroStrategyMobileSDK_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					NDEBUG,
+					_USE_MSI_COM,
+					_UNICODE,
+					_LITTLE_ENDIAN,
+					_WEB,
+					_MAC,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/**",
+					"$(PROJECT_DIR)/../Library/openssl/include/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../3rdParty/AppConnect\"",
+					"$(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lxml2",
+					"-lStdC++",
+				);
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(PROJECT_DIR)/../../Common/ReportServiceCore/Headers\"/** \"$(PROJECT_DIR)/../../Common/ReportServiceCore/Classes\"/** \"$(PROJECT_DIR)/../../Common\" \"$(PROJECT_DIR)/../ChartEngine/Classes\"/** $(PROJECT_DIR)/../Library/GoogleAnalyticsServicesiOS/Header";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E8C94251BCD119E00D8D99A /* Build configuration list for PBXNativeTarget "MicroStrategyMobileIPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E8C94261BCD119E00D8D99A /* Debug */,
+				8E8C94271BCD119E00D8D99A /* Release */,
+				1954C0D31D081A0D00B3EE73 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E8C94611BCD136600D8D99A /* Build configuration list for PBXNativeTarget "MicroStrategyMobileIPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E8C94621BCD136600D8D99A /* Debug */,
+				8E8C94631BCD136600D8D99A /* Release */,
+				1954C0D41D081A0D00B3EE73 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EA8B1B71B90EEA10063204B /* Build configuration list for PBXProject "MicroStrategyMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EA8B1DD1B90EEA10063204B /* Debug */,
+				8EA8B1DE1B90EEA10063204B /* Release */,
+				1954C0D21D081A0D00B3EE73 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EA8B1B41B90EEA10063204B /* Project object */;
+}

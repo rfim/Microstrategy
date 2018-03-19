@@ -1,0 +1,6 @@
+<dzs showMetricsUnit="false" showPropertiesEditor="true" useWidgetProps="true"> 
+   <dz id="Grouping" nm="Grouping" nmdesc="mstr.972" pmry="true" dztp="axis" ax="1" max="-1" widgetProp="" />
+   <dz id="SizeBy" nm="Size By" nmdesc="mstr.973" pmry="false" dztp="metrics"  max="1" widgetProp="ml@0" autoCreate="ColorBy" />
+   <dz id="ColorBy" nm="Color By" nmdesc="mstr.971" pmry="false" dztp="metrics"  max="1" widgetProp="ml@1" autoCreate="SizeBy" autoThresholds="true" />
+   <dz id="AdditionalMetrics" nm="Additional Metrics" nmdesc="mstr.1257" pmry="false" dztp="metrics"  max="-1" widgetProp="am@@" dragUnique="true" />
+</dzs>

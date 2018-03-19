@@ -1,0 +1,13 @@
+<dzs showMetricsUnit="true" showPropertiesEditor="true" useWidgetProps="false">
+    <dzsp nm="Matrix" nmdesc="mstr.995" />
+    <dz id="Rows" nm="Rows" nmdesc="mstr.967" dztp="axis" ax="1" pmry="true" max="-1" />
+    <dz id="Columns" nm="Columns" nmdesc="mstr.966" dztp="axis" ax="2" pmry="true" max="-1" />
+    <dzsp nm="Graph" nmdesc="mstr.994" />
+    <dz id="XAxis" nm="X Axis" nmdesc="mstr.969" dztp="adaptive" ax="2" pmry="true" max="-1" />
+    <dz id="YAxis" nm="Y Axis" nmdesc="mstr.970" dztp="adaptive" ax="1" pmry="true" max="-1" />
+    <dzsp nm="DataPoints" nmdesc="mstr.1525" />
+    <dz id="ColorBy" nm="Color By" nmdesc="mstr.965" dztp="adaptive" ax="2" pmry="false" autoCreate="BreakBy,XAxis" max="1" autoThresholds="true" />
+    <dz id="SizeBy" nm="Size By" nmdesc="mstr.968" dztp="metrics" pmry="false" max="1" />
+    <dz id="BreakBy" nm="Break By" nmdesc="mstr.964" dztp="axis" ax="1" pmry="true" max="-1" />
+    <dz id="AdditionalMetrics" nm="Additional Metrics" nmdesc="mstr.1257" dztp="metrics" pmry="false" max="-1" dragUnique="true" />
+</dzs>

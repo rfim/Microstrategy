@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--LaunchScreen-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController title="LaunchScreen" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen_icon_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="u62-Y9-nx7">
+                                <rect key="frame" x="249" y="199" width="102" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="9te-4o-hxq"/>
+                                    <constraint firstAttribute="height" constant="82" id="bf8-Ym-ien"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This program is protected by US and International Laws as described in Settings &gt; About &gt; Legal." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvh-2M-o9p">
+                                <rect key="frame" x="10" y="554" width="580" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Contents Copyright © 2016 MicroStrategy Incorporated. All rights reserved." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                <rect key="frame" x="10" y="536" width="580" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.13725490196078433" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="gvh-2M-o9p" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="10" id="76a-q8-TD1"/>
+                            <constraint firstItem="u62-Y9-nx7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.8" id="7hM-PB-Qlb"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="10" id="Pwh-NR-Xvu"/>
+                            <constraint firstItem="gvh-2M-o9p" firstAttribute="top" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="4" id="ijg-vJ-gnx"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="gvh-2M-o9p" secondAttribute="bottom" constant="32" id="jXe-cY-UiM"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="-10" id="jdy-BR-H6T"/>
+                            <constraint firstItem="u62-Y9-nx7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qR7-Mk-Y6N"/>
+                            <constraint firstItem="gvh-2M-o9p" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="-10" id="tie-Eb-J8A"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_screen_icon_white.png" width="102" height="82"/>
+    </resources>
+</document>

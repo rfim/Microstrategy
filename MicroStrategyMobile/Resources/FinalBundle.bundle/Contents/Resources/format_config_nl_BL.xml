@@ -1,0 +1,34 @@
+	<locale language="nl" country="BL">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#.##0,###</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>d/MM/yyyy</out>
+			<in> d/MM/yyyy</in>
+			<in> d/MM/yy</in>
+			<in>dd-MM-yy</in>
+			<in>dd.MM.yy</in>
+			<in>yyyy-MM-dd</in>
+		<display>d/MM/yyyy</display>
+		</data-type>
+		<data-type name="time">
+			<out>H:mm:ss</out>
+			<in>H:mm:ss</in>
+			<in>HH:mm:ss</in>
+			<in>H:mm</in>
+			<in>H.mm</in>
+			<in>HH.mm.ss' uur'</in>
+			<in>HH:mm:ss' uur'</in>
+                        <display>H:mm:ss</display>
+		</data-type>
+	</locale>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IOSVideoPlayerStyle</key>
+	<string>VideoWidgetViewer</string>
+	<key>IPadDatePickerStyle</key>
+	<string>MSICalendarWidgetViewer</string>
+	<key>IPadGraphMatrix2Style</key>
+	<string>GraphMatrixWidgetViewer2</string>
+	<key>IPadHeatMapStyle</key>
+	<string>HeatMapWidgetViewer</string>
+	<key>IPadInteractiveGridStyle</key>
+	<string>MSMGridWidgetViewer</string>
+	<key>IPadMapStyle</key>
+	<string>MSIMapWidgetViewer</string>
+	<key>IPadMicroChartsStyle</key>
+	<string>MicroChartsWidgetViewer</string>
+	<key>IPadRssStyle</key>
+	<string>MSMRssWidget</string>
+	<key>IPadTimeSeriesStyle</key>
+	<string>TimeSeriesWidgetViewer</string>
+	<key>IPadTimeLineWidgetStyle</key>
+	<string>MSMTimeLineWidgetViewer</string>
+	<key>IPadMediaStyle</key>
+	<string>MediaWidgetViewer</string>
+	<key>IPhoneImageMapStyle</key>
+	<string>ImageMapWidgetViewer</string>
+	<key>IPhoneImageViewerStyle</key>
+	<string>ImageViewerWidget</string>
+	<key>IPhoneInteractiveGridStyle</key>
+	<string>MSMGridWidgetViewer</string>
+	<key>IPhoneMapStyle</key>
+	<string>MSIMapWidgetViewer</string>
+	<key>IPhonePhotoUploaderStyle</key>
+	<string>ImageUploaderWidgetView</string>
+	<key>IPhoneRingChartStyle</key>
+	<string>RingChartWidgetViewer</string>
+	<key>IPhoneDataCloud</key>
+	<string>DataCloudViewController</string>
+	<key>IPadDataCloud</key>
+	<string>DataCloudViewController</string>
+	<key>IPhoneRssStyle</key>
+	<string>MSMRssWidget</string>
+	<key>IPhoneSimpleReportDisplayStyle</key>
+	<string>MISampleWidget</string>
+	<key>IPhoneTimeSeriesStyle</key>
+	<string>TimeSeriesWidgetViewer</string>
+	<key>IPhoneMediaStyle</key>
+	<string>MediaWidgetViewer</string>
+	<key>IPhoneNetVizStyle</key>
+	<string>NetVisWidget</string>
+	<key>SurveyVisualizationStyle</key>
+	<string>SurveyWidgetViewer</string>
+	<key>CiscoUCInfoWindowStyle</key>
+	<string>CiscoUCInfoWindowWidget</string>
+	<key>CiscoUCInlineStyle</key>
+	<string>CiscoUCWidget</string>
+	<key>ViEsriMapAdapter</key>
+	<string>ESRIMapWidgetViewerAdapter</string>
+	<key>IPadTreeStyle</key>
+	<string>MSITreeWidgetViewer</string>
+	<key>VisualizationStyleName</key>
+	<dict>
+		<key>iPad</key>
+		<string>SubClassof UIView</string>
+		<key>iPhone</key>
+		<string>SubClassOf UIView</string>
+	</dict>
+	<key>IPadWebWidget</key>
+	<string>MSTRWebWidgetViewer</string>
+</dict>
+</plist>

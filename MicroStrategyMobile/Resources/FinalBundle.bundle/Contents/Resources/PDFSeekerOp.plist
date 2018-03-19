@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>&quot;</key>
+	<string>PDFOpSetMoveAndShow</string>
+	<key>&apos;</key>
+	<string>PDFOpMoveAndShow</string>
+	<key>w</key>
+	<string>PDFOpSetLineWidth</string>
+	<key>Tz</key>
+	<string>PDFOpSetHorizontalTextScaling</string>
+	<key>Tw</key>
+	<string>PDFOpSetWordSpacing</string>
+	<key>Ts</key>
+	<string>PDFOpSetTextRise</string>
+	<key>Tr</key>
+	<string>PDFOpSetTextRenderingMode</string>
+	<key>Tm</key>
+	<string>PDFOpSetMatrix</string>
+	<key>TL</key>
+	<string>PDFOpSetTextLeading</string>
+	<key>TJ</key>
+	<string>PDFOpShowTextGlyph</string>
+	<key>Tj</key>
+	<string>PDFOpShowText</string>
+	<key>Tf</key>
+	<string>PDFOpSetTextFont</string>
+	<key>TD</key>
+	<string>PDFOpMoveTextSetLeading</string>
+	<key>Td</key>
+	<string>PDFOpMoveText</string>
+	<key>Tc</key>
+	<string>PDFOpSetCharSpacing</string>
+	<key>ET</key>
+	<string>PDFOpEndText</string>
+	<key>gs</key>
+	<string>PDFOpSetGraphicsStateParameters</string>
+	<key>q</key>
+	<string>PDFOpGSave</string>
+	<key>Q</key>
+	<string>PDFOpGRestore</string>
+	<key>T*</key>
+	<string>PDFOpNextLine</string>
+	<key>Do</key>
+	<string>PDFOpInvoke</string>
+	<key>cm</key>
+	<string>PDFOpConcatenate</string>
+	<key>BT</key>
+	<string>PDFOpBeginText</string>
+</dict>
+</plist>

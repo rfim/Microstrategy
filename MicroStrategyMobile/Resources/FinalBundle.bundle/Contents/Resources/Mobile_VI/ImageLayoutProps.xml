@@ -1,0 +1,12 @@
+<layout>
+  <fieldsetpanel label="" anno="">
+    <input id="mt" type="3" label="Display mode" value="0" enabled="true" listValues="Automatic|Area|Bubble" listIds="0|1|2" listType="2"/>
+    <input id="mf" type="3" label="Shape file" value="VisFramework/map/WorldImageMapCoords.html" enabled="true" listValues="Countries of Europe|Countries of the world|Regions of England|Regions of France|Regions of Italy|Regions of Japan|Regions of Poland|Regions of Singapore|State markers of USA|States of Brazil|States of USA" listIds="VisFramework/map/EuropeImageMapCoords.html|VisFramework/map/WorldImageMapCoords.html|VisFramework/map/EnglandImageMapCoords.html|VisFramework/map/FranceImageMapCoords.html|VisFramework/map/ItalyImageMapCoords.html|VisFramework/map/JapanImageMapCoords.html|VisFramework/map/PolandImageMapCoords.html|VisFramework/map/SingaporeImageMapCoords.html|VisFramework/map/USAMarkerMapCoords.html|VisFramework/map/BrazilImageMapCoords.html|VisFramework/map/USAMapCoords.html" listType="2"/>
+  </fieldsetpanel>
+  <fieldsetpanel label="Maximum size" anno="">
+    <input id="ty" type="8" label="Maximum size" value="0" enabled="true" listValues="Automatic|Manual" listIds="0|1" listType="2" sectionControl="true"/>
+    <input id="val" type="41" label="0.01-1" value="0.5" enabled="true" width="70" dep="ty" depValue="1">
+        <dependency operator="eval" dep="ty" depValue="1"/>
+    </input>
+  </fieldsetpanel>
+</layout>

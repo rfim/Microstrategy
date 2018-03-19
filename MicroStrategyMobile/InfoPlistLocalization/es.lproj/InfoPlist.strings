@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MicroStrategyMobile
+
+  Created by sun on 2/16/17.
+  Copyright © 2017 MicroStratgy Inc. All rights reserved.
+*/
+NSCameraUsageDescription = "La aplicación de MicroStrategy intenta acceder a la cámara del dispositivo.";
+NSPhotoLibraryUsageDescription = "La aplicación de MicroStrategy intenta acceder a la biblioteca de fotos del dispositivo.";

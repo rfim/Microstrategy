@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MicroStrategyMobile
+
+  Created by sun on 2/16/17.
+  Copyright © 2017 MicroStratgy Inc. All rights reserved.
+*/
+NSCameraUsageDescription = "MicroStrategy 응용 프로그램이 장치 카메라에 액세스하려고 했습니다.";
+NSPhotoLibraryUsageDescription = "MicroStrategy 응용 프로그램이 장치 카메라에 액세스하려고 했습니다.";

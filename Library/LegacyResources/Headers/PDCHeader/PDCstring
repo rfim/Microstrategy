@@ -1,0 +1,263 @@
+//==============================================================================================
+//	FILENAME	:	PDCstring
+//	AUTHOR		:	Perl Script
+//	CREATION	:	6/13/02
+//	Copyright (C) MicroStrategy, Inc. 2002
+//==============================================================================================
+#ifndef PDCstring
+#define PDCstring
+
+// this must be the *first* file included
+#include "ProtectedSource/Prolog.h"
+
+#ifdef _MSC_VER
+#pragma warning(disable:4786) // 'identifier' : identifier was truncated to 'number' characters in the debug information
+#pragma warning(disable:4251) // 'identifier' : class 'type' needs to have dll-interface to be used by clients of class 'type2'
+#pragma warning(disable:4018)
+#pragma warning(disable:4245)
+#pragma warning(disable:4663)
+#pragma warning(disable:4097)
+#endif
+
+#include <string>
+
+#ifndef WIN32
+#include "PDCwchar.h"
+
+namespace std
+{
+	typedef std::basic_string<wchar_t> wstring;
+}
+#endif // WIN32
+
+#ifdef linux
+namespace std
+{
+	// 6/10/2004 yuwen add
+	/// 21.1.4	char_traits specializations
+	template<>
+	struct char_traits<unsigned short>
+	{
+		typedef unsigned short char_type;
+		typedef int 		int_type;
+		typedef streamoff	off_type;
+		typedef streampos	pos_type;
+		typedef mbstate_t	state_type;
+		
+		static void 
+			assign(char_type& __c1, const char_type& __c2)
+		{ __c1 = __c2; }
+		
+		static bool 
+			eq(const char_type& __c1, const char_type& __c2)
+		{ return __c1 == __c2; }
+		
+		static bool 
+			lt(const char_type& __c1, const char_type& __c2)
+		{ return __c1 < __c2; }
+		
+		static int 
+			compare(const char_type* __s1, const char_type* __s2, size_t __n)
+		{
+			for (size_t i = 0; i < __n; ++i)
+				if (!eq(__s1[i], __s2[i]))
+					return lt(__s1[i], __s2[i])? -1 : 1;
+				return 0;
+		}
+		
+		static size_t
+			length(const char_type* __s)
+		{
+			const char_type* __p = __s;
+			while (*__p) ++__p;
+			return (__p - __s);
+		}
+		
+		static const char_type* 
+			find(const char_type* __s, size_t __n, const char_type& __a)
+		{
+			for (const char_type* __p = __s; size_t(__p - __s) < __n; ++__p)
+				if (*__p == __a) return __p;
+				return 0;
+		}
+		
+		static char_type* 
+			move(char_type* __s1, const char_type* __s2, int_type __n)
+		{
+			return (char_type*) memmove(__s1, __s2, __n * sizeof(char_type));
+		}
+		
+		static char_type* 
+			copy(char_type* __s1, const char_type* __s2, size_t __n)
+		{
+			return (char_type*) memcpy(__s1, __s2, __n * sizeof(char_type));
+		}
+		
+		static char_type* 
+			assign(char_type* __s, size_t __n, char_type __a)
+		{
+			for (char_type* __p = __s; __p < __s + __n; ++__p)
+				assign(*__p, __a);
+			return __s;
+		}
+		
+		static char_type 
+			to_char_type(const int_type& __c) { return char_type(__c); }
+		
+		static int_type 
+			to_int_type(const char_type& __c) { return int_type(__c); }
+		
+		static bool 
+			eq_int_type(const int_type& __c1, const int_type& __c2)
+		{ return __c1 == __c2; }
+		
+		static int_type 
+			eof() { return static_cast<int_type>(-1); }
+		
+		static int_type 
+			not_eof(const int_type& __c)
+		{ return eq_int_type(__c, eof()) ? int_type(0) : __c; }
+	};
+}
+#endif
+
+	// added by xfan. 1/21/08. issue 214108
+	// std::string append inefficient in Solaris, one memory allocation one append. 
+	// override it with operator +=, which is more efficient
+#ifdef sun
+namespace std
+{
+	template<> 
+	inline basic_string<char,char_traits<char>,allocator<char> >& basic_string<char,char_traits<char>,allocator<char> >::append(const char* iStr)
+	{
+		return operator += (iStr);
+	}
+
+	template<>
+	inline basic_string<char,char_traits<char>,allocator<char> >& basic_string<char,char_traits<char>,allocator<char> >::append(const basic_string<charT, traits, Allocator>& iStr)
+	{
+		return operator += (iStr.c_str());
+	}
+
+	template<>
+	inline basic_string<char,char_traits<char>,allocator<char> >& basic_string<char,char_traits<char>,allocator<char> >::append(size_type iCount, char iChar)
+	{
+		char lStr[2] = { iChar, '\0'};
+		for(int i=0;i<iCount;i++)
+		{
+			operator += (lStr);
+		}
+		return *this;
+	}
+
+	// not check if the input parameter is invalid or not. it's caller's reponsibility.
+	template<>
+	inline basic_string<char,char_traits<char>,allocator<char> >& basic_string<char,char_traits<char>,allocator<char> >::append(const char* iStr, size_type iCount)
+	{
+		for(int i=0;i<iCount;i++)
+		{
+			char lStr[2] = { *iStr++, '\0'};
+			operator += (lStr);
+		}
+		return *this;
+	}
+
+	template<>
+	inline basic_string<char,char_traits<char>,allocator<char> >& basic_string<char,char_traits<char>,allocator<char> >::append(const basic_string<charT, traits, Allocator>& iStr, size_type iOffset, size_type iCount)
+	{
+		char *lpChar = const_cast<char*>(iStr.c_str());
+		lpChar = lpChar + iOffset;
+
+		for(int i=0;i<iCount;i++)
+		{
+			char lStr[2] = { *lpChar++, '\0'};
+			operator += (lStr);
+		}
+		return *this;
+	}
+
+	template<>
+	inline basic_string<char,char_traits<char>,allocator<char> >& basic_string<char,char_traits<char>,allocator<char> >::operator+= (char iChar)
+	{
+		char lStr[2] = { iChar, '\0'};
+		return operator += (lStr);
+	}
+
+	template<>
+	inline basic_string<char,char_traits<char>,allocator<char> >& basic_string<char,char_traits<char>,allocator<char> >::operator+= (const basic_string<charT, traits, Allocator>& iStr)
+	{
+		return operator += (iStr.c_str());
+	}
+
+	//wchar
+	template<>
+	inline basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >& basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >::append(const wchar_t* iWStr)
+	{
+		return operator += (iWStr);
+	}
+
+	template<>
+	inline basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >& basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >::append(const basic_string<charT, traits, Allocator>& iWStr)
+	{
+		return operator += (iWStr.c_str());
+	}
+
+	template<>
+	inline basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >& basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >::append(size_type iCount, const wchar_t iWChar)
+	{
+		wchar_t lTerm = '\0';
+		wchar_t lWStr[2] = { iWChar, lTerm};
+		for(int i=0;i<iCount;i++)
+		{
+			operator += (lWStr);
+		}
+		return *this;
+	}
+
+	template<>
+	inline basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >& basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >::append(const wchar_t* iWStr, size_type iCount)
+	{
+		wchar_t lTerm = '\0';
+		for(int i=0;i<iCount;i++)
+		{
+			wchar_t lWStr[2] = { *iWStr++, lTerm};
+			operator += (lWStr);
+		}
+		return *this;
+	}
+
+	template<>
+	inline basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >& basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >::append(const basic_string<charT, traits, Allocator>& iWStr, size_type iOffset, size_type iCount)
+	{
+		wchar_t *lpWChar = const_cast<wchar_t*>(iWStr.c_str());
+		lpWChar = lpWChar + iOffset;
+
+		wchar_t lTerm = '\0';
+		for(int i=0;i<iCount;i++)
+		{
+			wchar_t lWStr[2] = { *lpWChar++, lTerm};
+			operator += (lWStr);
+		}
+		return *this;
+	}
+
+	template<>
+	inline basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >& basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >::operator+= (wchar_t iWChar)
+	{
+		wchar_t lTerm = '\0';
+		wchar_t lWStr[2] = { iWChar, lTerm};
+		return operator += (lWStr);
+	}
+
+	template<>
+	inline basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >& basic_string<wchar_t,char_traits<wchar_t>,allocator<wchar_t> >::operator+= (const basic_string<charT, traits, Allocator>& iWStr)
+	{
+		return operator += (iWStr.c_str());
+	}
+}
+#endif
+
+// this must be the *last* file included
+#include "ProtectedSource/Epilog.h"
+
+#endif // PDCstring

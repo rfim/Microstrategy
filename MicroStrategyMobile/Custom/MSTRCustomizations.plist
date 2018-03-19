@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DynamicUpdateVectorIcon</key>
+	<string>NO</string>
+	<key>BackgroundDataTransferCacheCheckOption</key>
+	<integer>0</integer>
+	<key>TemplateMultiSelection</key>
+	<false/>
+	<key>PersistSelection</key>
+	<false/>
+	<key>StatsManipulation</key>
+	<true/>
+	<key>OverrideExistingPreferences</key>
+	<false/>
+	<key>SoftwareEncryptionEnabled</key>
+	<true/>
+	<key>SecurityFramework</key>
+	<string>Default</string>
+	<key>UpdateExistingPreferences</key>
+	<false/>
+	<key>UsesBundledPreference</key>
+	<true/>
+	<key>PhotoUploaderDefaultSize</key>
+	<string>Medium</string>
+	<key>PhotoUploaderDefaultQuality</key>
+	<string>Low</string>
+	<key>SwipeToChangeLayouts</key>
+	<false/>
+	<key>InfoWindowSettings</key>
+	<dict>
+		<key>EnablePartialScreenIW</key>
+		<false/>
+		<key>AlwaysRenderContentImmediately</key>
+		<false/>
+	</dict>
+	<key>TxNSubmitPresetValue</key>
+	<false/>
+	<key>ShowCloseButtonAfterLinkDrilling</key>
+	<false/>
+	<key>CustomizeNavigationBarButton</key>
+	<false/>
+	<key>GraphDefaultSelectEmpty</key>
+	<false/>
+</dict>
+</plist>

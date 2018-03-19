@@ -1,0 +1,28 @@
+	<locale language="sv" country="SE">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in># ##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in># ##0,###</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>yyyy-MM-dd</out>
+			<in>yy-M-d</in>
+			<in>yyyy-M-d</in>
+                        <display>yyyy-MM-dd</display>
+		</data-type>
+		<data-type name="time">
+			<out>HH:mm:ss</out>
+			<in>H:m</in>
+			<in>H:m:s</in>
+			<in>H:m:s z</in>
+                        <display>HH:mm:ss</display>
+		</data-type>
+	</locale>

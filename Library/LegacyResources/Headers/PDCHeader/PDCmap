@@ -1,0 +1,32 @@
+//==============================================================================================
+//	FILENAME	:	PDCmap
+//	AUTHOR		:	Perl Script
+//	CREATION	:	6/13/02
+//	Copyright (C) MicroStrategy, Inc. 2002
+//==============================================================================================
+#ifndef PDCmap
+#define PDCmap
+
+// this must be the *first* file included
+#include "ProtectedSource/Prolog.h"
+
+#ifdef _MSC_VER
+#pragma warning(disable:4786) // 'identifier' : identifier was truncated to 'number' characters in the debug information
+#pragma warning(disable:4251) // 'identifier' : class 'type' needs to have dll-interface to be used by clients of class 'type2'
+#endif
+
+#ifdef WIN32
+	#ifndef WIN64 // for 32-bit Windows
+	//#include "PDCHeader/ProtectedSource/MAP"
+	#include <map>
+	#else
+	#include <map>
+	#endif
+#else
+	#include <map>
+#endif
+
+// this must be the *last* file included
+#include "ProtectedSource/Epilog.h"
+
+#endif // PDCmap

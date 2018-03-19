@@ -1,0 +1,9 @@
+<dzs showMetricsUnit="false" showPropertiesEditor="true" useWidgetProps="true"> 
+    <dzsp nm="MapMarker" nmdesc="mstr.1526" />
+    <dz id="GeoAttr" nm="Geo Attribute" nmdesc="Geo Attribute" dztp="axis" ax="1" pmry="true" max="1" widgetProp="ga" showForms="false"/>
+    <dz id="Latitude" nm="Latitude" nmdesc="mstr.960" dztp="axis" ax="1" pmry="true" max="1" widgetProp="flat" showForms="true"/>
+    <dz id="Longitude" nm="Longitude" nmdesc="mstr.961" dztp="axis" ax="1" pmry="true" max="1" widgetProp="flong" showForms="true"/>
+    <dzsp nm="AdditionalData" nmdesc="mstr.1527" />
+    <dz id="ColorBy" nm="Color By" nmdesc="mstr.959" dztp="metrics" ax="1" pmry="true" max="1" widgetProp="cmt" autoThresholds="true"/>
+    <dz id="AdditionalAttributes" nm="Additional Attributes" nmdesc="mstr.1257" dztp="axis" ax="1" pmry="false" max="-1" widgetProp="" dragUnique="true" showForms="false"/>
+</dzs>

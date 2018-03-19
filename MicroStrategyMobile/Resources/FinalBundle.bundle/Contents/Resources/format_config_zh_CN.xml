@@ -1,0 +1,31 @@
+    <locale language="zh" country="CN">
+        <list-separator>,</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#,##0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>###0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0.##########</out>
+            <in>#,##0.###</in>
+            <!-- display node for this data type currently not in use -->
+            <display>###0.##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>yyyy-MM-dd</out>
+            <in>yy-M-d</in>
+            <in>yyyy/M/d</in>
+            <in>yyyy/MM/dd</in>
+            <in>yyyy-M-d</in>
+            <display>yy-M-d</display>
+        </data-type>
+        <data-type name="time">
+            <out>a h:mm:ss</out>
+            <in>H:m</in>
+            <in>H:m:s</in>
+            <in>a h:m</in>
+            <in>a h:m:s</in>
+            <display>H:mm:ss</display>
+        </data-type>
+    </locale>

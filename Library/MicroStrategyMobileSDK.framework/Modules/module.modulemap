@@ -1,0 +1,6 @@
+framework module MicroStrategyMobileSDK {
+  umbrella header "MicroStrategyMobileSDK.h"
+
+  export *
+  module * { export * }
+}

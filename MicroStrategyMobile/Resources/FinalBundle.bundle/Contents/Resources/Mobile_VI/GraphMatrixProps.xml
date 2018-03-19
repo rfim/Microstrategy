@@ -1,0 +1,24 @@
+<layout>
+  <fieldsetpanel label="" anno="">
+    <input id="FitTo" type="3" label="Fit to" value="Panel" enabled="true" listValues="Content|Panel" listIds="Content|Panel" listType="2"/>
+    <input id="GridLine" type="3" label="Grid lines" value="Automatic" enabled="true" listValues="Automatic|Show|Hide" listIds="Automatic|Show|Hide" listType="2"/>
+    <input id="Banding" type="2" label="Banding" value="false" enabled="true"/>
+  </fieldsetpanel>
+  <fieldsetpanel label="" anno="">
+    <input id="Shape" type="3" label="Graph Type" value="Bar" enabled="true" listValues="Line|Bar|Circle|Square|Tick|Area|Pie|Ring" listIds="Line|Bar|Circle|Square|Tick|Area|Pie|Ring" listType="2"/>
+    <input id="Subtype" type="3" label="Graph Subtype" value="Automatic" enabled="true" listValues="Automatic|Clustered|Stacked|Absolute|Percent" listIds="Automatic|Clustered|Stacked|Absolute|Percent" listType="2"/>
+    <input id="MinMax" type="3" label="Axis Scale" value="Global" enabled="true" listValues="Global|Per row / column|Local" listIds="Global|PerRC|Local" listType="2"/>
+  </fieldsetpanel>
+  <fieldsetpanel label="Maximum Size" anno="">
+    <input id="SizeType" type="8" label="Maximum Size" value="Automatic" enabled="true" listValues="Automatic|Manual" listIds="Automatic|Manual" listType="2" sectionControl="true"/>
+    <input id="SizeValue" type="41" label="1-5" value=".9" enabled="true" width="70" dep="SizeType" depValue="Manual">
+    	<dependency operator="eval" dep="SizeType" depValue="Manual" newValue="Manual"/>
+    </input>
+  </fieldsetpanel>
+  <fieldsetpanel label="Minimum Size" anno="">
+    <input id="minSizeType" type="8" label="Minimum Size" value="Automatic" enabled="true" listValues="Automatic|Proportional|Manual" listIds="Automatic|Proportional|Manual" listType="2" sectionControl="true"/>
+    <input id="minSizeValue" type="41" label="0.00-1" value=".2" enabled="true" width="70" dep="minSizeType" depValue="Manual">
+        <dependency operator="eval" dep="minSizeType" depValue="Manual" newValue="Manual"/>
+    </input>
+  </fieldsetpanel>
+</layout>

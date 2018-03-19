@@ -1,0 +1,10 @@
+<layout>
+    <fieldsetpanel label="" anno="">
+        <input id="BandingOptions" type="2" label="Show Banding" value="false" enabled="true"/>
+    </fieldsetpanel>
+    <fieldsetpanel label="" anno="">
+        <input id="ColumnScenario" type="3" label="Fit to" value="2" enabled="true" listValues="Content|Window" listIds="2|1" listType="2"/>
+        <input id="Lock" type="3" label="Lock" value="1" enabled="true" listValues="Columns|Rows|Rows and columns|None" listIds="1|2|3|0" listType="2"/>
+        <input id="Merge" type="3" label="Merge" value="1" enabled="true" listValues="Columns|Rows|Rows and columns|None" listIds="1|2|3|0" listType="2"/>
+    </fieldsetpanel>
+</layout>

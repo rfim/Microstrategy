@@ -1,0 +1,8 @@
+<layout>
+    <fieldsetpanel label="Subtypes" anno="">
+        <input id="GraphType" type="9" label="Pie" value="43" enabled="true" listValues="Pie|Ring" listIds="43|44" listType="2"/>
+    </fieldsetpanel>
+    <fieldsetpanel label="Data" anno="">
+        <input id="MaxCategories" type="10" label="Max categories" value="30" enabled="true"/>
+    </fieldsetpanel>
+</layout>

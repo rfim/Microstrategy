@@ -1,0 +1,9 @@
+<dzs showMetricsUnit="false" showPropertiesEditor="true" useWidgetProps="true"> 
+   <dzsp nm="Network" nmdesc="mstr.1528" />
+   <dz id="FromItem" nm="From Item" nmdesc="mstr.1334" pmry="true" dztp="axis" ax="1" max="1" widgetProp="fromitem" />
+   <dz id="ToItem" nm="To Item" nmdesc="mstr.1335" pmry="true" dztp="axis" ax="1" max="1" widgetProp="toitem" />
+   <dzsp nm="ColorAndSize" nmdesc="mstr.1529" />
+   <dz id="EdgeColor" nm="Edge Color" nmdesc="mstr.1337" pmry="false" dztp="metrics" max="1" widgetProp="edgecolorby" autoThresholds="true"/>
+   <dz id="EdgeSize" nm="Edge Size" nmdesc="mstr.1336" pmry="false" dztp="metrics" max="1" widgetProp="edgesizeby" />
+   <dz id="NodeSize" nm="Node Size" nmdesc="mstr.1338" pmry="false" dztp="metrics" max="1" widgetProp="nodesizeby" />
+</dzs>

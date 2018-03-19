@@ -1,0 +1,13 @@
+<layout>
+  <fieldsetpanel label="" anno="">
+    <input id="ed" type="2" label="Quick Delete" value="false" enabled="true"/>
+    <input id="mv" type="2" label="Show Metric Values" value="false" enabled="true" dep="lb" depValue="On"/>
+    <input id="lg" type="2" label="Show Legend" value="false" enabled="true"/>
+  </fieldsetpanel>
+  <fieldsetpanel label="" anno="">
+      <input id="lb" type="3" label="Show Labels" value="On" enabled="true" listValues="On|Off|Proportional" listIds="On|Off|Proportional" listType="2" showValue="true"/>
+  </fieldsetpanel>
+  <fieldsetpanel label="" anno="">
+     <input id="la" type="7" label="Layout" value="0" enabled="true" listValues="Keep readability, not element order|Balance readability and order|Keep element order, not readability" listIds="0|1|2" orientation="1" width="-1" showValue="false"/>
+  </fieldsetpanel>
+</layout>

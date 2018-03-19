@@ -1,0 +1,5 @@
+<dzs showMetricsUnit="false" showPropertiesEditor="false" useWidgetProps="true"> 
+    <dz id="GeoAttr" nm="Geo Attribute" nmdesc="Geo Attribute" dztp="axis" ax="1" pmry="true" max="1" widgetProp="ga" showForms="false" />
+    <dz id="ColorBy" nm="Color By" nmdesc="mstr.965" dztp="metrics" ax="1" pmry="false" max="1" widgetProp="ColorBy" autoThresholds="true" />
+    <dz id="SizeBy" nm="Size By" nmdesc="mstr.968" dztp="metrics" ax=">1?2:1" pmry="false" max="1" widgetProp="SizeBy" autoThresholds="true" />
+</dzs>
